@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    color: #18171C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    height: 20px;
+    margin: 50px;
+}
+
+.navbar p{
+    font-family: 'Pacifico', cursive;
+}
+
+.sub{
+    font-size: 20px;
+    padding: 30px;
+}
+
+.link{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-list{
+    text-decoration: none;
+    color: #000000;
+}
+
+li .link-list:hover{
+    color: #55abec;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #b6d3e9; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.project img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.project img:hover{
+    transform: scale(1.04);
+}
+
+.project h4{
+    padding: 5px;
+    text-align: center;
+}
+
+.footers{
+    padding: 40px 0;
+    background-color: #ededed;
+}
+
+.footers .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+
+}
+
+.footers .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footers .social a:hover{
+    opacity: 0.9;
+}
+
+
+@media(max-width:660px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    h1{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .project img{
+        width: 100%;
+        height: 550px;
+    }
+}
+
