@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 
 *{
     padding: 0;
@@ -11,6 +12,7 @@ body{
     background-color: #f9f9f9;
     width: 100%;
     height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar{
@@ -50,49 +52,64 @@ li .link-list:hover{
     color: #55abec;
 }
 
-.about{
-    width: 100%;
-    padding: 78px 0px;
+.wrapper{
+    margin-top: 10%;
 }
 
-.about img{
-    height: auto;
-    width: 420px;
-
+.wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
-.abt-text{
-    width: 550px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
+.team{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+  
+  .team .team_member{
+    background: #716c6c;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #fff;  
+    position: relative;
+}
+  
+  .team .team_member h3{
+    color: #55abec;
+    font-size: 26px;
+    margin-top: 50px;
 }
 
-.abt-text h1{
-    font-size: 80px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+.team .team_member p.role{
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
 }
-
-.abt-text h5{
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
+  
+  .team .team_member .team_img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #716c6c;
 }
-
-.abt-text p{
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
+  
+  .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
 }
 
 .footers{
@@ -135,7 +152,9 @@ li .link-list:hover{
 
     h1{
         height: 250px;
+        padding: 125px;
     }
+
 }
 
 @media(max-width:1100px){
@@ -145,36 +164,3 @@ li .link-list:hover{
     }
 }
 
-@media(max-width:980px){
-    .about img{
-        height: auto;
-        width: 240px; 
-    }
-}
-
-@media(max-width:880px){
-    .about img{
-        height: auto;
-        width: 200px; 
-    }
-
-    .main{
-        flex-direction: column-reverse;
-    }
-}
-
-@media(max-width:640px){
-    .abt-text h1{
-        margin-bottom: -135px;
-    }
-}
-
-@media(max-width:500px){
-    .main{
-        margin: 0 100px;
-    }
-
-    .abt-text h1{
-        font-size: 40px;
-    }
-}
